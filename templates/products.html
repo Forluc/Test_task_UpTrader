@@ -1,0 +1,22 @@
+{% load items_tags %}
+{% draw_menu 'menu_products' as draw %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Products</title>
+  </head>
+  <body>
+
+  <header>
+    <h1>Меню</h1>
+    <ul>
+      {% for section in draw.sections %}
+        <li><a href="{{ section.link }}">{{ section.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </header>
+
+
+  <h1>Страница Продукты</h1>
+  </body>
+</html>
