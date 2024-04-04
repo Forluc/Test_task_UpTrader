@@ -9,7 +9,7 @@
 Скачайте код с GitHub. Установите зависимости:
 
 ```sh
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 Базу данных SQLite оставлена специально
@@ -17,9 +17,11 @@ pip install -r requirements.txt
 
 Запустите разработческий сервер
 
+```sh
+$ python3 manage.py runserver
 ```
-python3 manage.py runserver
-```
+
+На сайте имеются 3 страницы(`/products`, `/faq`, `/about`). Для каждой страницы можно сделать `свое меню в админ-панели`, и указать название меню в `html` файле. При клике на ссылку, интерфейс изменяется в зависимости от страницы
 
 ## Переменные окружения
 
